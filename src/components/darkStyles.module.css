@@ -1,0 +1,7 @@
+/* darkStyles.module.css */
+.container {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text color */
+  min-height: 100vh; /* Full viewport height */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}

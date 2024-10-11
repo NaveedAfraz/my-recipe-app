@@ -1,0 +1,70 @@
+/* Home.css */
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 1.5rem;
+  flex: 0 1 calc(33% - 2rem); /* Adjusts the size of each card */
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure images are of the same size */
+.recipe-card img {
+  width: 350px; /* Make the image take the full width of the card */
+  height: auto; /* Set a specific height for all images */
+  object-fit: cover; /* Maintain aspect ratio and cover the space */
+  border-radius: 4px; /* Optional: add some rounded corners to the image */
+}
+
+.recipe-title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.recipe-publisher {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.recipe-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-link:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recipe-card {
+    flex: 0 1 calc(50% - 2rem); /* Adjust to 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-card {
+    flex: 0 1 calc(100% - 2rem); /* Adjust to 1 card per row on mobile */
+  }
+}

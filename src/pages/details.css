@@ -1,0 +1,132 @@
+/* Details.css */
+
+.details-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  /* Center the container */
+  margin: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-header {
+  display: flex; /* Use flexbox for alignment */
+  align-items: flex-start; /* Align items to the start */
+  margin-bottom: 1rem; /* Space between header and other content */
+}
+.publisher{
+  color: #444;
+}
+
+.details-header img {
+  width: 400px; /* Set a fixed width for uniformity */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Round corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem; /* Space between image and text */
+}
+
+.details-info {
+  flex: 1; /* Allow text to take the remaining space */
+}
+
+.details-info h2 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0; /* Remove default margin */
+}
+
+.details-info h3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin: 0.5rem 0; /* Space around publisher */
+}
+
+.details-info button {
+  padding: 0.5rem 1rem;
+  background-color: #ff5722; /* Main button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-info button:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
+
+.ingredients-list {
+  margin-top: 1rem;
+}
+
+.ingredients-list h4 {
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.ingredients-list ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.ingredients-list li {
+  padding: 0.5rem 0;
+  color: #444;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd; /* Separator line */
+}
+
+.ingredients-list li span {
+  display: inline-block;
+  margin-right: 1rem; /* Space between quantity/unit and description */
+}
+
+.ingredients-list li:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .details-container {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .details-header {
+    flex-direction: column; /* Stack image and text on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .details-header img {
+    margin: 0 auto; /* Center the image */
+    margin-bottom: 1rem; /* Space below image */
+  }
+
+  .details-info h2 {
+    font-size: 1.5rem; /* Adjust font size on smaller screens */
+  }
+
+  .details-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .ingredients-list h4 {
+    font-size: 1.2rem;
+  }
+}
+.details-container .loading {
+  text-align: center;
+}
+
+.details-container .loading p {
+  margin-bottom: 10px;
+}
+
+.details-container .loading .faSpinner {
+  font-size: 2rem; /* Adjust size of the spinner */
+  color: #333; /* Customize color */
+}
+.spinner{
+  font-size: 2rem;
+}

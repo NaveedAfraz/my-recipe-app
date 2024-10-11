@@ -1,0 +1,7 @@
+/* styles.module.css */
+.container {
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Light text color */
+  min-height: 100vh; /* Full viewport height */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}

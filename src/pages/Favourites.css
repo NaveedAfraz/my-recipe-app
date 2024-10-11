@@ -1,0 +1,67 @@
+/* Favourites.css */
+
+.favourites-container {
+  padding: 2rem;
+  max-width: 800px;
+  padding: 3rem;
+}
+
+.favourite-recipe {
+  border: 1px solid #ddd; /* Border for each recipe */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem;
+  margin-bottom: 1.5rem; /* Space between recipes */
+  background-color: #fff; /* White background for each recipe */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to start */
+  color: #333;
+  font-weight:550;
+}
+
+.recipe-image {
+ /* Responsive image */
+  height: 300px; /* Maintain aspect ratio */
+  border-radius: 8px; /* Round corners */
+  margin: 1rem 0; /* Space above and below the image */
+}
+
+.favourite-recipe h2 {
+  font-size: 1.8rem; /* Title size */
+  color: #333; /* Dark text color */
+  margin: 0.5rem 0; /* Margin around title */
+}
+
+.favourite-recipe h3, .favourite-recipe h4 {
+  color: #555; /* Slightly lighter color for subheadings */
+}
+
+.favourite-recipe ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.favourite-recipe li {
+  padding: 0.5rem 0; /* Space between ingredients */
+  border-bottom: 1px solid #ddd; /* Divider line */
+}
+
+.favourite-recipe li:last-child {
+  border-bottom: none; /* Remove last border */
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #ff5722; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
