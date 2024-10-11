@@ -1,8 +1,6 @@
 import { createContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 export const Context = createContext();
-
 export default function Globalcontext({ children }) {
   const [inputValue, setInputValue] = useState("");
   const [loading, setloading] = useState(true);
