@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from './styles.module.css'; // Light theme
+import lightStyles from './lightStyles.module.css'; // Light theme
 import darkStyles from './darkStyles.module.css'; // Dark theme
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./navbar";
@@ -13,7 +13,7 @@ export function App() {
   return (
     <Router>
       <Globalcontext>
-        <div className={isDarkMode ? darkStyles.container : styles.container}>
+        <div className={isDarkMode ? darkStyles.container : lightStyles.container}>
           <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
           <Routes>
             <Route path="/" element={<Home />} />
